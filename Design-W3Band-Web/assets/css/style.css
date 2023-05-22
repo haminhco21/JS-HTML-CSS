@@ -64,6 +64,7 @@
         height: 46px;
         background-color: #333;
         z-index: 1;
+        overflow: hidden;
     }
     
     #nav,
@@ -117,9 +118,9 @@
         line-height: 38px;
     }
     
-    .search-btn {
+    #header .mobile-menu-btn,
+    #header .search-btn {
         float: right;
-        line-height: 46px;
         padding: 0 21px;
     }
     
@@ -128,8 +129,25 @@
         cursor: pointer;
     }
     
-    #header .ti-search {
+    #header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    
+    .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    .mobile-menu-btn:hover .menu-icon {
+        color: #000;
+    }
+    
+    #header .menu-icon,
+    #header .search-icon {
         font-size: 22px;
+        line-height: 46px;
         color: #fff;
     }
     
@@ -163,9 +181,11 @@
     
     #content .content-section {
         width: 800px;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: 64px 0;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     #content .section-heading {

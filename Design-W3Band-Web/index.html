@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
@@ -24,16 +25,24 @@
                         <i class="ti-angle-down" style="font-size: 10px; "></i>
                     </a>
                     <ul class="sub-nav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
 
-            <div class="search-btn">
-                <i class="ti-search"></i>
+            <!-- Menu Btn -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
+
+
+            <!-- Search Btn -->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
         </div>
         <div id="slider">
             <div class="text-content">
@@ -204,6 +213,16 @@
     const modal = document.querySelector('.modal')
     const closeModal = document.querySelector('.model-close')
     const modalContainer = document.querySelector('.js-modal-container')
+    const mobileMenu = document.getElementById('mobile-menu')
+    const header = document.getElementById('header')
+        // Lay gia tri chieu cao cua header ban dau luu vao bien headerHeight
+    const headerHeight = header.clientHeight
+
+    // const homeMenu = document.getElementById('home-menu')
+    // const bandMenu = document.getElementById('band-menu')
+    // const tourMenu = document.getElementById('tour-menu')
+    // const contentMenu = document.getElementById('content-menu')
+    // const allMenu = document.getElementById('all-menu')
 
 
     function showBuyTickets() {
@@ -230,6 +249,27 @@
         buyBtn.addEventListener('click', () => {
             modal.classList.add('open')
         })
+    }
+
+
+    // mo dong mobile Menu
+    mobileMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+            header.style.height = 'auto'
+        } else {
+            header.style.height = null
+        }
+    }
+
+    // Tu dong dong mo chon menu
+    const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (let i = 0; i < menuItems.length; i++) {
+        const menuItem = menuItems[i];
+        menuItem.onclick = function() {
+            header.style.height = null
+        }
+
     }
 </script>
 
