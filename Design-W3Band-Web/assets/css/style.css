@@ -72,16 +72,14 @@
     }
     
     #nav {
-        display: inline-block;
+        display: flex;
     }
     
     #nav>li {
         display: inline-block;
     }
     
-    #nav li {
-        position: relative;
-    }
+    #nav li {}
     
     #nav>li>a {
         color: #fff;
@@ -120,6 +118,9 @@
     #header .search-btn {
         float: right;
         padding: 0 21px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     
     .search-btn:hover {
@@ -128,9 +129,6 @@
     }
     
     #header .mobile-menu-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
         display: none;
     }
     
@@ -182,8 +180,7 @@
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 64px 16px;
     }
     
     #content .section-heading {
@@ -326,6 +323,7 @@
         padding: 11px 16px;
         display: inline-block;
         margin-top: 15px;
+        text-align: center;
     }
     
     .place-buy-btn:hover {
@@ -437,6 +435,7 @@
     
     .contact-content {
         margin-top: 48px;
+        margin-bottom: 32px;
     }
     
     .contact-info {
@@ -451,6 +450,7 @@
     
     .contact-form {
         font-size: 15px;
+        padding: 0 0 32px 0;
     }
     
     .contact-form .form-control {
@@ -472,6 +472,10 @@
     .contact-form .form-submit:hover {
         background-color: #ccc;
         color: #000;
+    }
+    
+    .map-section {
+        margin-top: 16px;
     }
     
     .map-section img {

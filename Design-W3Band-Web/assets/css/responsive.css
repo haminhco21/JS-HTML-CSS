@@ -1,6 +1,20 @@
         /* PC */
         
         @media (min-width: 1024px) {}
+        /* Tablet & Mobile */
+        
+        @media (max-width:1023px) {
+            .btn {
+                padding: 15px 0;
+            }
+            .contact-form .form-control {
+                padding: 15px;
+            }
+            .socials-list {
+                font-size: 48px;
+            }
+            .contact-info {}
+        }
         /* Tablet */
         
         @media (min-width: 740px) and (max-width: 1023px) {}
@@ -9,6 +23,9 @@
         @media (max-width: 740px) {
             .s-col-full {
                 width: 100%;
+            }
+            .s-mt-8 {
+                margin-top: 8px;
             }
             .places-list {
                 display: block;
@@ -51,5 +68,11 @@
             #content .member-item {
                 margin-top: 30px;
                 width: 100%;
+            }
+            .contact-form {
+                margin-top: 16px;
+            }
+            #slider .text-content {
+                display: none;
             }
         }
