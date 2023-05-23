@@ -64,7 +64,6 @@
         height: 46px;
         background-color: #333;
         z-index: 1;
-        overflow: hidden;
     }
     
     #nav,
@@ -108,7 +107,6 @@
     
     #nav .sub-nav {
         display: none;
-        position: absolute;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
@@ -281,7 +279,7 @@
     
     .places-list {
         display: flex;
-        margin-top: 32px;
+        margin-top: 16px;
         padding-bottom: 48px;
     }
     
