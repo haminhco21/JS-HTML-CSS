@@ -429,8 +429,12 @@
     cursor: pointer;
 }
 
-.header__search-input {
+.header__search-input-wrap {
     flex: 1;
+}
+
+.header__search-input {
+    width: 100%;
     height: 100%;
     border: none;
     outline: none;
