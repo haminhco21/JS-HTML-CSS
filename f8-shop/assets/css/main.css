@@ -637,7 +637,7 @@
     width: 400px;
     border-radius: 2px;
     box-shadow: 0 1ox 3.125rem 0 rgba(0, 0, 0, 0.2);
-    display: none;
+    /* display: none; */
     cursor: default;
 }
 
