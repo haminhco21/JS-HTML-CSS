@@ -431,6 +431,8 @@
 
 .header__search-input-wrap {
     flex: 1;
+    height: 100%;
+    position: relative;
 }
 
 .header__search-input {
@@ -547,4 +549,25 @@
 
 .header__search-option--active i {
     display: inline-block;
+}
+
+
+/* Search history */
+
+.header__search-history {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    box-shadow: 0 0 5px #999;
+    border-radius: 3px;
+}
+
+.header__search-history-heading {
+    padding: 14px 8px;
+}
+
+.header__search-history-list {
+    list-style: none;
 }
