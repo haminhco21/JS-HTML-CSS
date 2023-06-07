@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: #ee4d2d;
     --border-color: #DBDBDB;
+    --star-gold-color: #FFCE3E;
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc( var(--header-height) - var(--navbar-height));
@@ -166,6 +167,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .select-input:hover .select-input__list {
