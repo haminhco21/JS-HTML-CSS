@@ -1222,3 +1222,8 @@ i.home-product-item__like-icon-fill {
     border-style: solid;
     border-width: 0 20px 4px;
 }
+
+.home-product__pagination {
+    margin-top: 56px;
+    margin-bottom: 32px;
+}
